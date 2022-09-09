@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dresser_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+     <item
+        android:id="@+id/navigation_pie_chart"
+        android:icon="@drawable/ic_baseline_pie_chart_24"
+        android:title="@string/title_chart" />
+
+    <item
+        android:id="@+id/navigation_dresser_chat_support"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/title_chat" />
+    <item
+        android:id="@+id/navigation_dresser_message"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/title_message" />
+
+    <item
+        android:id="@+id/navigation_dresser_profile"
+        android:icon="@drawable/profiles"
+        android:title="@string/title_profile" />
+</menu>

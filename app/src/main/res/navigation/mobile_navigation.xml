@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.treesme.User.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+   <!-- <fragment
+        android:id="@+id/navigation_pie_chart"
+        android:name="com.example.treesme.ui.chart.ChartFragment"
+        android:label="@string/title_chart"
+        tools:layout="@layout/pie_chart_fragment" />-->
+
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="com.example.treesme.User.ui.community.CommunityFragment"
+        android:label="@string/title_community"
+        tools:layout="@layout/fragment_community" />
+    <fragment
+        android:id="@+id/navigation_chat_support"
+        android:name="com.example.treesme.User.ui.chat.ChatSupportFragment"
+        android:label="@string/title_chat"
+        tools:layout="@layout/fragment_chat"/>
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.treesme.User.ui.message.MessageFragment"
+        android:label="@string/title_message"
+        tools:layout="@layout/fragment_message"/>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.treesme.User.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile"/>
+</navigation>

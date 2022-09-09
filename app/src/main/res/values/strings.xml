@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">TressMe</string>
+    <string name="title_activity_main_screen_dashboard" translatable="false">MainScreenDashboard</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_community" translatable="false">Community</string>
+    <string name="title_chart" translatable="false">Pie Chart</string>
+    <string name="title_chat" translatable="false">Chat Support</string>
+    <string name="title_message" translatable="false">Messages</string>
+    <string name="title_profile" translatable="false">My Profile</string>
+    <string name="title_activity_main_dashboard" translatable="false">MainDashboard</string>
+    <string name="welcom_text" translatable="false">Welcome,\nsign in to continue\non TressMe</string>
+    <string name="user_login_text" translatable="false">User Login</string>
+    <string name="dresser_login_text" translatable="false">Hair Dresser Login</string>
+    <string name="OR_text" translatable="false">OR</string>
+    <string name="not_yet_registered_text" translatable="false">Not registered yet?</string>
+    <string name="create_account_txt" translatable="false">Create an Account</string>
+    <string name="filter_title_txt" translatable="false">Filter</string>
+    <string name="where_txt" translatable="false">Where?</string>
+    <string name="address_hint" translatable="false">Address</string>
+
+    <string name="day_txt" translatable="false">Day</string>
+    <string name="today_hint" translatable="false">Today</string>
+    <string name="tomorrow_hint" translatable="false">Tomorrow</string>
+    <string name="time_txt" translatable="false">Time</string>
+    <string name="continue_txt" translatable="false">Continue</string>
+
+
+    <string name="forgot_pass_txt" translatable="false">Forgot\nPassword?</string>
+    <string name="forgot_content_txt" translatable="false">Don\'t worry! It happens. Please enter the address associated with your account.</string>
+    <string name="email_hint" translatable="false">Email</string>
+    <string name="submit_txt" translatable="false">Submit</string>
+
+    <string name="dresser_name_txt" translatable="false">Grace</string>
+    <string name="dresser_status_txt" translatable="false">Home and on move</string>
+    <string name="payment_txt" translatable="false">Card Payment</string>
+    <string name="average_response_txt" translatable="false">Average\nresponse time</string>
+
+    <string name="total_review_txt" translatable="false">Total\nreview time</string>
+    <string name="benefit_txt" translatable="false">Benefit</string>
+    <string name="availabilty_txt" translatable="false">Availability</string>
+    <string name="photos_txt" translatable="false">Photos</string>
+
+
+    <string name="booking_slot_txt" translatable="false">Book on this time slots</string>
+    <string name="hairstyle_title_txt" translatable="false">Choose Your Hairstyle</string>
+    <string name="password_hint" translatable="false">Password</string>
+    <string name="confirm_password_hint" translatable="false">Confirm Password</string>
+    <string name="login_txt" translatable="false">Login</string>
+    <string name="forget_pass_txt" translatable="false">Forgot Password?</string>
+
+    <string name="reserved_txt" translatable="false">Reserved</string>
+    <string name="name_txt" translatable="false">Fullname</string>
+    <string name="message_hint" translatable="false">Type Something....</string>
+    <string name="phone_txt" translatable="false">Phone Number</string>
+    <string name="save_btn_txt" translatable="false">Save</string>
+    <string name="signout_btn_txt" translatable="false">Sign Out</string>
+
+    <string name="benefit_title_txt" translatable="false">My Benefits</string>
+    <string name="planning_title_txt" translatable="false">My Planning</string>
+    <string name="like_txt" translatable="false">Like</string>
+    <string name="post_txt" translatable="false">Post</string>
+    <string name="test_product_txt" translatable="false">Test Product</string>
+    <string name="upload_image_title" translatable="false">Upload Your\nProfile Image</string>
+
+    <string name="select_image_txt" translatable="false">Select Image</string>
+    <string name="choose_hairstyle_txt" translatable="false">Choose a hair style</string>
+    <string name="upload_txt" translatable="false">Upload</string>
+    <string name="your_reserve_txt" translatable="false">Your Reservation</string>
+    <string name="choose_date_txt" translatable="false">Choose a date</string>
+    <string name="choose_hour_title" translatable="false">Choose an hour</string>
+
+
+    <string name="at_my_place_txt" translatable="false">At my place</string>
+    <string name="at_dresser_place_txt" translatable="false">At dresser\'s place</string>
+    <string name="hair_dresser_txt" translatable="false">Hair Dresser:</string>
+    <string name="signup_txt" translatable="false">Sign Up</string>
+    <string name="names_txt" translatable="false">Name</string>
+    <string name="price_txt" translatable="false">Price</string>
+    <string name="benefit_name_txt" translatable="false">Ex: locks,tresses, box braids</string>
+    <string name="benefit_price_txt" translatable="false">0.00</string>
+    <string name="add_btn_txt" translatable="false">Add</string>
+    <string name="cancel_btn_txt" translatable="false">Cancel</string>
+
+    <string name="objective_txt" translatable="false">My Financial Objective</string>
+    <string name="my_objective_txt" translatable="false">My Objective</string>
+    <string name="modify_objective_txt" translatable="false">Modify my objective</string>
+
+    <string name="team_content_txt" translatable="false">Our team is here to answer you....</string>
+    <string name="team_desp_txt" translatable="false">typically replies under 2 hours</string>
+    <string name="compose_msg_txt" translatable="false">Compose your message...</string>
+
+
+    <string name="about_txt" translatable="false">About</string>
+    <string name="review_txt" translatable="false">Review</string>
+    <string name="my_avg_response_txt" translatable="false">My\nresponse time</string>
+
+    <string name="my_review_txt" translatable="false">My\nreview count</string>
+    <string name="my_bio_txt" translatable="false">My Bio</string>
+    <string name="my_post_txt" translatable="false">My Posts</string>
+    <string name="my_review_btn_txt" translatable="false">My Reviews</string>
+
+    <string name="main_welcome_txt" translatable="false">Welcome,</string>
+    <string name="my_revenue_txt" translatable="false">My Revenus</string>
+    <string name="modify_profile_txt" translatable="false">Modify Profile</string>
+    <string name="popular_hairstyle_txt" translatable="false">Popular Hair Styles</string>
+
+    <string name="show_all_txt" translatable="false">Show all</string>
+    <string name="skin_tips_txt" translatable="false">Skincare Tips</string>
+    <string name="product_test_txt" translatable="false">Product Testing</string>
+    <string name="view_txt" translatable="false">View</string>
+    <string name="available_txt" translatable="false">Available</string>
+
+    <string name="get_started_txt" translatable="false">Get Started</string>
+    <string name="month_txt" translatable="false">This Month</string>
+    <string name="year_txt" translatable="false">This Year</string>
+    <string name="walkthrough1_title_txt" translatable="false">Helping you to take good care of your Hair</string>
+    <string name="walkthrough2_title_txt" translatable="false">Discover and Book your favorite Stylists</string>
+    <string name="walkthrough3_title_txt" translatable="false">Share your new look and get rewards</string>
+
+    <string name="walkthrough1_content_txt" translatable="false">Be your own kind of beautiful and create a new look</string>
+    <string name="walkthrough2_content_txt" translatable="false">Schedule your appointments as per your convenice</string>
+    <string name="walkthrough3_content_txt" translatable="false">Share your look with your friends and earn rewards points</string>
+
+    <string name="faq_txt" translatable="false">FAQ</string>
+    <string name="language_txt" translatable="false">Language</string>
+    <string name="faq_question1_txt" translatable="false">Are you a salon?</string>
+    <string name="faq_question2_txt" translatable="false">How can I book?</string>
+    <string name="faq_question3_txt" translatable="false">Can we discuss with the hairdresser before booking?</string>
+    <string name="faq_question4_txt" translatable="false">Are there any additional charges?</string>
+    <string name="faq_question5_txt" translatable="false">Do you supply wicks?</string>
+    <string name="faq_question6_txt" translatable="false">How are your hairdressers selected?</string>
+    <string name="faq_question7_txt" translatable="false">Where is your service located?</string>
+    <string name="faq_question8_txt" translatable="false">Can I cancel an appointment?</string>
+    <string name="faq_question9_txt" translatable="false">Can we pay in cash?</string>
+    <string name="faq_question10_txt" translatable="false">How does the site work ?</string>
+    <string name="faq_question11_txt" translatable="false">I can\'t find an answer to my question?</string>
+
+    <string name="faq_answer1_txt" translatable="false">TressMe is an application that connects women with frizzy / curly hair with hairdressers who know their hair type.</string>
+    <string name="faq_answer2_txt" translatable="false">To book, simply indicate the type of service and the desired date as well as your postal code. You will have access to a list of hairdressers near you. You will be able to visit their profile, look at the photos of their achievements and opinions. We advise you to maintain your exchanges with your hairdresser as much as possible in the TressMe conversation module to keep a history and secure your reservation.</string>
+    <string name="faq_answer3_txt" translatable="false">Yes it is possible and it is even recommended. All you have to do is go to the profile of the hairdresser, click on the desired service and you will have the possibility of sending her a message. You can then ask him about his availability and ask him all your questions.</string>
+    <string name="faq_answer4_txt" translatable="false">For you, none. With TressMe you have no additional costs when paying: the final price is the one indicated on the profile of the hairdresser. Our model is based on a low commission paid by the hairdresser so that each of them enjoys the benefits of the MCA community.</string>
+    <string name="faq_answer5_txt" translatable="false">Our hairdressers do not provide wicks at this time.</string>
+    <string name="faq_answer6_txt" translatable="false">We select each hairdresser who joins the MCA team with great care, we evaluate each profile so that they provide you with quality service. The latter adhere to a satisfaction charter as soon as they enter the platform.</string>
+    <string name="faq_answer7_txt" translatable="false">Our service is available in Île de France, but it will soon be available in other regions.</string>
+    <string name="faq_answer8_txt" translatable="false">You have up to 24 hours before the date of your appointment to cancel without any charge. For this you can contact us by email at contact@macoiffeuseafro.com or at 07 82 52 19 52.</string>
+    <string name="faq_answer9_txt" translatable="false">Currently payment is only made online by credit card on our secure payment system Stripe. Your payment is debited on the day of the service.</string>
+    <string name="faq_answer10_txt" translatable="false">1. Indicate the date, hairstyle and location.\n2. Select your hairdresser by directly viewing his talent thanks to the opinions of other users, photos and videos and send him a message to confirm his availability.\n3. All you have to do is book online.</string>
+    <string name="faq_answer11_txt" translatable="false">Do not hesitate to contact us via the address contact@macoiffeuseafro.com or on 07 82 52 19 52, we will provide you with an answer within 48 hours.</string>
+
+
+    <string-array name="benefits_array">
+        <item>Tresses (Braids)</item>
+        <item>Vanilles (Twists)</item>
+        <item>Crochet Braids</item>
+        <item>Tissages</item>
+        <item>Passion twists</item>
+        <item>Nattes collees</item>
+        <item>Fausses locks</item>
+        <item>Cornrows</item>
+        <item>Locks</item>
+        <item>Ponytail</item>
+        <item>Tresses enfants</item>
+        <item>Lace</item>
+        <item>Perruque</item>
+        <item>Extension de cheveux</item>
+        <item>Maquillage</item>
+        <item>Soins</item>
+        <item>Coupes</item>
+        <item>Lissages</item>
+        <item>Coiffures</item>
+        <item>Cauleur</item>
+        <item>Mariage/Chignon</item>
+        <item>Miscellaneous</item>
+
+    </string-array>
+</resources>
