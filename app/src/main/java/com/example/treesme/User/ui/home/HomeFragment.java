@@ -17,8 +17,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.treesme.Adapters.HairStylesListAdaper;
 import com.example.treesme.Adapters.ProductTestingListAdaper;
 import com.example.treesme.Adapters.SkincareTipListAdaper;
+import com.example.treesme.Adapters.SliderAdapterExample;
 import com.example.treesme.Model.Hairstyles;
 import com.example.treesme.Model.ProductModel;
+import com.example.treesme.Model.Sponsored;
 import com.example.treesme.Model.User;
 import com.example.treesme.R;
 import com.example.treesme.SharedPreferencesManager;
@@ -30,6 +32,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.smarteist.autoimageslider.SliderView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -48,6 +51,8 @@ public class HomeFragment extends Fragment {
     private DatabaseReference db,db1,skinDB,productDB;
     List<Hairstyles> hairstyles;
     private SharedPreferencesManager pref;
+    private SliderView sliderView;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -61,6 +66,7 @@ public class HomeFragment extends Fragment {
         username = root.findViewById(R.id.name);
         hairStyleShow = root.findViewById(R.id.show_all);
         profileImg = root.findViewById(R.id.profile);
+        sliderView = root.findViewById(R.id.imageSlider);
         pref = new SharedPreferencesManager(getActivity());
         getLocale();
 
@@ -72,6 +78,7 @@ public class HomeFragment extends Fragment {
         getHairStyles();
         getSkincareTips();
         getProducts();
+        getBanner();
         hairStyleShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -80,6 +87,31 @@ public class HomeFragment extends Fragment {
             }
         });
         return root;
+    }
+
+    private void getBanner() {
+        List<Sponsored> sponsoredList = new ArrayList<>();
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Sponsored");
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()){
+                    sponsoredList.clear();
+                    for (DataSnapshot ds : snapshot.getChildren()){
+                        Sponsored model = ds.getValue(Sponsored.class);
+                        if (!model.getName().equals("") && !model.getImageUrl().equals("")) {
+                            sponsoredList.add(model);
+                        }
+                    }
+                    sliderView.setSliderAdapter(new SliderAdapterExample(getActivity(),sponsoredList));
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
     private void getLocale(){
