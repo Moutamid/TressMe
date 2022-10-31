@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.treesme.User.ui.home.HomeFragment"
+        android:name="com.moutamid.treesme.User.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
@@ -19,22 +19,22 @@
 
     <fragment
         android:id="@+id/navigation_community"
-        android:name="com.example.treesme.User.ui.community.CommunityFragment"
+        android:name="com.moutamid.treesme.User.ui.community.CommunityFragment"
         android:label="@string/title_community"
         tools:layout="@layout/fragment_community" />
     <fragment
         android:id="@+id/navigation_chat_support"
-        android:name="com.example.treesme.User.ui.chat.ChatSupportFragment"
+        android:name="com.moutamid.treesme.User.ui.chat.ChatSupportFragment"
         android:label="@string/title_chat"
         tools:layout="@layout/fragment_chat"/>
     <fragment
         android:id="@+id/navigation_message"
-        android:name="com.example.treesme.User.ui.message.MessageFragment"
+        android:name="com.moutamid.treesme.User.ui.message.MessageFragment"
         android:label="@string/title_message"
         tools:layout="@layout/fragment_message"/>
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.treesme.User.ui.profile.ProfileFragment"
+        android:name="com.moutamid.treesme.User.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile"/>
 </navigation>

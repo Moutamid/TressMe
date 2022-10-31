@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:9029000811:android:0d2aaaa0419397c908db2e",
+        "mobilesdk_app_id": "1:9029000811:android:0686b24e49b2483408db2e",
         "android_client_info": {
-          "package_name": "com.example.treesme"
+          "package_name": "com.moutamid.treesme"
         }
       },
       "oauth_client": [
         {
-          "client_id": "9029000811-v6sqtq0pefb47hph01slveeutsdr9gqp.apps.googleusercontent.com",
+          "client_id": "9029000811-eaguvkddo5dh4s3lt1gntpggj5ioahfh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.treesme",
+            "package_name": "com.moutamid.treesme",
             "certificate_hash": "309bc07aea5fffbbbf69c8b8435d380078ec8eba"
           }
         },

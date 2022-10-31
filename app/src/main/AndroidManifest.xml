@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.treesme">
+    package="com.moutamid.treesme">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".startup.EmojiApplication"
+        android:name="com.moutamid.treesme.startup.EmojiApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -22,91 +22,91 @@
         android:theme="@style/Theme.TreesMe"
         tools:targetApi="31">
         <activity
-            android:name=".FaqActivity"
+            android:name="com.moutamid.treesme.FaqActivity"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".Hairdresser.MyPlanningActivity"
+            android:name="com.moutamid.treesme.Hairdresser.MyPlanningActivity"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".Hairdresser.MyBenefitsActivity"
+            android:name="com.moutamid.treesme.Hairdresser.MyBenefitsActivity"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".Hairdresser.MainDashboard"
+            android:name="com.moutamid.treesme.Hairdresser.MainDashboard"
             android:exported="false"
             android:label="@string/title_activity_main_dashboard" />
         <activity
-            android:name=".ModifyProfileScreen"
+            android:name="com.moutamid.treesme.ModifyProfileScreen"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".User.ReservationScreen"
+            android:name="com.moutamid.treesme.User.ReservationScreen"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".HairDresserProfile"
+            android:name="com.moutamid.treesme.HairDresserProfile"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".User.PostDetail"
+            android:name="com.moutamid.treesme.User.PostDetail"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".MessagesActivity"
+            android:name="com.moutamid.treesme.MessagesActivity"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".User.ProductTestingDetails"
+            android:name="com.moutamid.treesme.User.ProductTestingDetails"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".User.SkincareTipsDetails"
+            android:name="com.moutamid.treesme.User.SkincareTipsDetails"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".User.HairDresserStyles"
+            android:name="com.moutamid.treesme.User.HairDresserStyles"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".User.HairDresserInfo"
+            android:name="com.moutamid.treesme.User.HairDresserInfo"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".User.FilterHairStylist"
+            android:name="com.moutamid.treesme.User.FilterHairStylist"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".User.MainScreenDashboard"
+            android:name="com.moutamid.treesme.User.MainScreenDashboard"
             android:exported="false"
             android:label="@string/title_activity_main_screen_dashboard" />
         <activity
-            android:name=".ProfileImage"
+            android:name="com.moutamid.treesme.ProfileImage"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".AccountsLogin.ForgotPassword"
+            android:name="com.moutamid.treesme.AccountsLogin.ForgotPassword"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".WalkthroughScreens.SlideActivity"
+            android:name="com.moutamid.treesme.WalkthroughScreens.SlideActivity"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".AccountsLogin.Login"
+            android:name="com.moutamid.treesme.AccountsLogin.Login"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".AccountsLogin.SignUp"
+            android:name="com.moutamid.treesme.AccountsLogin.SignUp"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".AccountsLogin.AccountsRegistrationScreen"
+            android:name="com.moutamid.treesme.AccountsLogin.AccountsRegistrationScreen"
             android:exported="false"
             android:theme="@style/Theme.TreesMe.NoActionBar" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.moutamid.treesme.SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.TreesMe.NoActionBar">
             <intent-filter>
