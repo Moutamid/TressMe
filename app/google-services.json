@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "9029000811-eaguvkddo5dh4s3lt1gntpggj5ioahfh.apps.googleusercontent.com",
+          "client_id": "9029000811-bv07h85ei7m023c7cps6h8tipv6367ud.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.moutamid.treesme",
-            "certificate_hash": "309bc07aea5fffbbbf69c8b8435d380078ec8eba"
+            "certificate_hash": "3e01b2fe667dcec477574358b764ea6ad0ea714c"
           }
         },
         {
