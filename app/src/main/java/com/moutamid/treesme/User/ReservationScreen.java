@@ -83,9 +83,15 @@ public class ReservationScreen extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         uId = mAuth.getCurrentUser().getUid();
         fnameTxt.setText(mUser.getName());
-        Picasso.with(ReservationScreen.this)
-                .load(mUser.getImageUrl())
-                .into(profileImg);
+        if (mUser.getImageUrl().equals("")){
+            Picasso.with(ReservationScreen.this)
+                    .load(R.drawable.logo)
+                    .into(profileImg);
+        }else {
+            Picasso.with(ReservationScreen.this)
+                    .load(mUser.getImageUrl())
+                    .into(profileImg);
+        }
         dateTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

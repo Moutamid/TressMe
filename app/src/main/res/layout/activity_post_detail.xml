@@ -97,6 +97,7 @@
             android:drawablePadding="5dp"
             android:gravity="center"
             android:padding="8dp"
+            android:id="@+id/reserved"
             android:text="@string/reserved_txt"
             android:textColor="@android:color/white" />
 

@@ -217,9 +217,15 @@ public class HomeFragment extends Fragment {
                 if (snapshot.exists()){
                     User model = snapshot.getValue(User.class);
                     username.setText(model.getName());
-                    Picasso.with(getActivity())
-                            .load(model.getImageUrl())
-                            .into(profileImg);
+                    if (model.getImageUrl().equals("")){
+                        Picasso.with(getActivity())
+                                .load(R.drawable.logo)
+                                .into(profileImg);
+                    }else {
+                        Picasso.with(getActivity())
+                                .load(model.getImageUrl())
+                                .into(profileImg);
+                    }
                 }
             }
 

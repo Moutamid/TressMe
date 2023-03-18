@@ -3,12 +3,15 @@ package com.moutamid.treesme.User;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.moutamid.treesme.MessagesActivity;
 import com.moutamid.treesme.Model.Post;
 import com.moutamid.treesme.Model.User;
 import com.moutamid.treesme.R;
@@ -30,15 +33,17 @@ public class PostDetail extends AppCompatActivity {
 
     private ImageView backImg,postImg,likesImg,savedImg;
     private CircleImageView profileImg;
-    private TextView nameTxt,dateTxt,likeTxt,saveTxt;
+    private TextView nameTxt,dateTxt,likeTxt,saveTxt,reserveTxt;
     private FirebaseAuth mAuth;
     private DatabaseReference db,db1,likeDB,favoriteDB;
     private String dresserId = "";
+    private User mUser;
     private String postId="";
     private SharedPreferencesManager manager;
     private int like_count = 0;
     private boolean isSaved;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +56,7 @@ public class PostDetail extends AppCompatActivity {
         nameTxt = findViewById(R.id.username);
         dateTxt = findViewById(R.id.date);
         likeTxt = findViewById(R.id.like_count);
+        reserveTxt = findViewById(R.id.reserved);
         profileImg = findViewById(R.id.profile);
         postId = getIntent().getStringExtra("pId");
         dresserId = getIntent().getStringExtra("dresserId");
@@ -89,6 +95,14 @@ public class PostDetail extends AppCompatActivity {
                     isSaved = true;
                     saveTxt.setText("Unsave");
                 }
+            }
+        });
+        reserveTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PostDetail.this, ReservationScreen.class);
+                intent.putExtra(ReservationScreen.EXTRAS_USER, mUser);
+                startActivity(intent);
             }
         });
 
@@ -223,11 +237,18 @@ public class PostDetail extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     User model = snapshot.getValue(User.class);
+                    mUser = model;
                     nameTxt.setText(model.getName());
-                    Picasso.with(PostDetail.this)
-                            .load(model.getImageUrl())
-                            .into(profileImg);
+                    if (model.getImageUrl().equals("")){
+                        Picasso.with(PostDetail.this)
+                                .load(R.drawable.logo)
+                                .into(profileImg);
 
+                    }else {
+                        Picasso.with(PostDetail.this)
+                                .load(model.getImageUrl())
+                                .into(profileImg);
+                    }
                 }
             }
 

@@ -207,10 +207,17 @@ public class MessagesActivity extends AppCompatActivity {
 
     private void initializeToolbar() {
         usernameTxt.setText(mUser.getName());
-        Picasso.with(MessagesActivity.this)
-                .load(mUser.getImageUrl())
-                .placeholder(R.drawable.profile)
-                .into(profileImg);
+        if (mUser.getImageUrl().equals("")){
+
+            Picasso.with(MessagesActivity.this)
+                    .load(R.drawable.profile)
+                    .into(profileImg);
+        }else {
+            Picasso.with(MessagesActivity.this)
+                    .load(mUser.getImageUrl())
+                    .placeholder(R.drawable.profile)
+                    .into(profileImg);
+        }
         backImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
