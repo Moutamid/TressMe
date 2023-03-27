@@ -3,6 +3,7 @@ package com.moutamid.treesme.User;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
+import com.moutamid.treesme.Constants;
 import com.moutamid.treesme.Model.User;
 import com.moutamid.treesme.R;
 import com.moutamid.treesme.SharedPreferencesManager;
@@ -59,6 +60,7 @@ public class MainScreenDashboard extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseDatabase.getInstance().getReference().child("Users");
         //getUserData();
+        Constants.checkApp(MainScreenDashboard.this);
     }
     private void getLocale(){
 

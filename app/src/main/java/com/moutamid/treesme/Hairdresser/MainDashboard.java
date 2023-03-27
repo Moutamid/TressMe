@@ -3,8 +3,10 @@ package com.moutamid.treesme.Hairdresser;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
+import com.moutamid.treesme.Constants;
 import com.moutamid.treesme.R;
 import com.moutamid.treesme.SharedPreferencesManager;
+import com.moutamid.treesme.User.MainScreenDashboard;
 import com.moutamid.treesme.databinding.ActivityMainDashboardBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -32,6 +34,7 @@ public class MainDashboard extends AppCompatActivity {
         getSupportActionBar().hide();
         manager = new SharedPreferencesManager(MainDashboard.this);
         getLocale();
+        Constants.checkApp(MainDashboard.this);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
