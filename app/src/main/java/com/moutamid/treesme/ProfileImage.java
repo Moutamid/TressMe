@@ -85,7 +85,6 @@ public class ProfileImage extends AppCompatActivity {
                 saveInformation();
             }
         });
-
     }
 
     private void getLocale(){
